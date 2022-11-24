@@ -1,0 +1,109 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <link href="style.css"  rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <title> CSS Selectors: Cheat Sheet</title>
+    </head>
+    <body>
+        <header>
+            CSS Selectors and Specificity
+        </header>
+        <div class='selectors'>
+            <div class='table_header'>
+        <h1 >Selectors</h1>    </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Description</th>
+                    <th>Example</th>
+                </tr>     
+            </thead>
+            <tbody>
+                <tr>
+                 <td>Type</td>
+                  <td>Type selectors style HTML elements of a given type or tag name.</td>
+                  <td> <div class='code'>h1 { color: white;
+                } </div></td>
+                </tr>
+                <tr>
+                    <td>Class</td>
+                    <td>Class selectors define elements based on the contents of their class attribute. </td>
+                    <td> <div class='code'> <div class='code-text'>.calendar-cell {
+                         color: #fff; </div>
+                      } </div></td>
+                </tr>   
+                <tr>
+                    <td> ID </td>
+                    <td>ID selectors match elements based on the contents of their id attribute. </td>
+                    <td> <div class='code'>#job-title {
+                        font-weight: bold;
+                      }</div></td>
+                 </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div class='selectors'>
+       <div class='table_header'>
+        <h1>
+            Rules
+        </h1>
+         </div>
+          </p>
+        <table>
+            <thead> 
+                <tr>
+                    <th>Rule </th>
+                    <th> Description</th>
+                    <th> Example </th>
+                </tr>
+            </thead>
+            <tbody> 
+                <tr> 
+                    <td>   Grouping </td>
+                    <td> Multiple selectors can be matched so that same style is applied to them. </td>
+                    <td> <div class='code'> h1, h2 {
+                        color: red;
+                      } </div></td>
+                </tr>
+                <tr> 
+                    <td>   Chaining </td>
+                    <td> Chaining allows to apply style only to elements that match all criteria. </td>
+                    <td> <div class='code'> /* Select h3 elements with the section-heading class */
+                        h3.section-heading {
+                          color: blue;
+                        }
+                        
+                        /* Select elements with the section-heading and button class */
+                        .section-heading.button {
+                          cursor: pointer;
+                        } </div> </td>
+                </tr>
+                <tr> 
+                    <td>  Descending </td>
+                    <td> Use descendant selector combinator to style elements that are descended from another selector. </td>
+                    <td> <div class='code'> div p { }
+
+                        section ol li { } </div> </td>
+                </tr>
+                <tr> 
+                    <td>   Specificity </td>
+                    <td> Selectors are applied in such priority: 1. ID selector; 2. Class selector; 3. Type selector </td>
+                    <td> TBD </td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        <footer>
+            <p>  Made by <a href="https://www.linkedin.com/in/allanabatova/">Alla Nabatova</a> using such resources:
+                <ol>
+                    <li><a href=" https://www.codecademy.com/learn/learn-css/modules/syntax-and-selectors/cheatsheet">Code Academy</a></li>
+                    <li><a href="https://www.w3schools.com/csSref/css_selectors.php">w3schools</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">Mozilla Docs</a></li>
+                </ol> </p>
+           
+        </footer>
+    </body>
+</html>
